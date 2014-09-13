@@ -1,0 +1,50 @@
+!!! 5
+%html
+  %head
+    %title Boa Incognito 
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tag
+    %link{rel: 'stylesheet', href: '/daum_editor/css/editor.css', type: 'text/css', charset: 'utf-8'}
+    - if controller.action_name == "new" || controller.action_name == "edit" 
+      :javascript
+        daumEditorConfig = {
+        imagePopupPath: "#{controller.image_popup_path if controller.controller_name == 'events' || controller.controller_name == 'abouts'}",
+        model_name : "#{@editor.class.to_s.downcase}"
+        };
+      %script{src:'/daum_editor/js/editor_loader.js', type: 'text/javascript', charset: 'utf-8'}
+  %body
+    .admin_header
+      .title_bar
+        %span.site_url m.boaortho.com 
+        .right_helpdoc
+          %span Help
+          .font_doc
+            %span DOC
+      .admin_logo
+        %span 보아치과 CCD Incognito 모바일 사이트
+        .lower_font
+          %span 관리자 모드
+    .admin_body
+      - if admin_signed_in?
+        .container-fluid
+          .row-fluid
+            .span2{style: "text-align: center;"}
+              = render partial: 'shared/sidebar'
+            = yield
+      - else
+        = yield
+        
+    .admin_footer
+      .skyseed_logo
+        %p 제작: SKYSEED
+        %p Tel: 02-499-3111
+        //%span.sky SKY
+        /%span.seed SEED
+        /%span.tel_lower (Tel. 02-499-3111)
+
+  /- if (controller.controller_name == "abouts" || controller.controller_name == "events") && (controller.action_name == "new" || controller.action_name == "edit")
+    /= javascript_include_tag "admin_foot_javascripts"
+
+  
+    

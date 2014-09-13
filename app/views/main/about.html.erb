@@ -1,0 +1,25 @@
+<div class="content_text">  <!-- aboutccl 본문 시작 -->
+   <img src="/img/before_after/before_after_page_top.png" class="width_full">
+     <% @abouts.each_with_index do |about, index| %>
+         
+       <div class="about">
+
+         <div class="name_area">
+	   <span class="case">
+	      CASE <%= index + 1 %>
+	   </span>
+           <span class="name">
+	      <%= about.title %>
+	   </span>
+	 </div>
+
+	 <div class="photo">
+           <img src='<%=about.ba_image %>' class="width_full">
+         </div>
+
+       </div>
+
+     <% end %>
+</div>  <!-- aboutccl 본문 끝 -->
+
+

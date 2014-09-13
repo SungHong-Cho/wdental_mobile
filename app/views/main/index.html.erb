@@ -1,0 +1,145 @@
+# -*- coding: utf-8 -*-
+<% content_for :js do %>
+    <script src="flexslider/jquery.flexslider.js"></script>
+    <link href="flexslider/flexslider.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" charset="utf-8">
+/*      $(window).load(function() {
+          $('.flexslider').flexslider();
+          animation: "slide";
+      });
+*/
+         $(window).load(function(){
+	   $('.flexslider').flexslider({
+             animation:"slide",
+	     slideDirection: "horizontal",
+	     slideshow: true,
+	     slideshowSpeed: 4000,
+	     animationDuration: 500,
+	     keyboardNav:false,
+	     directionNav:true,
+	     controlNav:true,
+	     mousewheel:false,
+	     pausePlay:false,
+	     randomize:false,
+	     slideToStart:0,
+	     animationLoop:true,
+	     pauseOnAction:false,
+	     pauseOnHover:false,
+	     start: function(){
+	     },
+	     before: function(){},
+	     after: function(){ 
+	     },
+	     end: function(){}
+	   });
+	 });
+     </script>
+
+     <% if(@event) %>
+
+       <script type="text/javascript" charset="utf-8">
+
+          //popup을 띄워주는 스크립트
+         $(document).on('pageshow', '#mp', function(event){
+           
+	   setTimeout(function(){
+                   $('#popup_event').popup('open');
+           },0);
+
+         });
+     
+       </script>
+     
+     <% end %>
+
+<% end %>
+
+<div class="main_page">
+
+    <img src="img/index/index_top_1.png">
+
+    <img src="img/index/index_photo.png"/>
+
+    <img src="img/index/index_top_2.png"/>
+
+    <img src="img/index/index_1_2.png"/>
+
+    <div id="main_middle">
+      <div class="flexslider">
+	<ul class="slides">
+          <li>
+            <img src="img/slider/slide1.png"/>
+          </li>
+          <li>
+            <img src="img/slider/slide2.png"/>
+          </li>
+          <li>
+            <img src="img/slider/slide3.png"/>
+          </li>
+          <li>
+            <img src="img/slider/slide4.png"/>
+	  </li>
+          <li>
+            <img src="img/slider/slide5.png"/>
+	  </li>
+          <li>
+            <img src="img/slider/slide6.png"/>
+	  </li>
+        </ul>
+      </div>
+    </div>
+ <a href="tel:02-6925-0033" target:"_blank" >
+    <div class="consulting_call">
+      <div class="title">
+	  <span>바로 전화상담하기</span>
+      </div>
+      <div class="phoneNumber">
+          <span>02-6925-0033</span>
+      </div>
+    </div>
+ </a>
+
+    <div class="consulting">
+      <h2> 모바일 상담신청 </h2>
+      <p>아래 사항을 기재하여 신청하시면 원하시는 날짜에 Boa치과 인코그니토 전문상담원이 맞춤형 전화상담을 해드립니다. </p>
+      <%= render "shared/consulting_request_form" %>
+    </div>
+
+    <img src="img/index/index_2.png">
+
+    <img src="img/index/index_3.png">
+
+    <img src="img/index/index_4_1.png">
+
+    <!--              구글 지도               -->
+    <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.kr/maps?f=q&amp;source=s_q&amp;hl=ko&amp;geocode=&amp;q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%9C%EC%B4%88%EA%B5%AC+%EC%84%9C%EC%B4%88%EB%8F%99+%EB%B3%B4%EC%95%84%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90&amp;aq=0&amp;oq=%EB%B3%B4%EC%95%84%EC%B9%98%EA%B3%BC&amp;sll=37.489719,127.03105&amp;sspn=0.001847,0.003996&amp;ie=UTF8&amp;hq=%EB%B3%B4%EC%95%84%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90&amp;hnear=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%9C%EC%B4%88%EA%B5%AC+%EC%84%9C%EC%B4%88%EB%8F%99&amp;t=m&amp;cid=14927986312868838445&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.kr/maps?f=q&amp;source=embed&amp;hl=ko&amp;geocode=&amp;q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%9C%EC%B4%88%EA%B5%AC+%EC%84%9C%EC%B4%88%EB%8F%99+%EB%B3%B4%EC%95%84%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90&amp;aq=0&amp;oq=%EB%B3%B4%EC%95%84%EC%B9%98%EA%B3%BC&amp;sll=37.489719,127.03105&amp;sspn=0.001847,0.003996&amp;ie=UTF8&amp;hq=%EB%B3%B4%EC%95%84%EC%B9%98%EA%B3%BC%EC%9D%98%EC%9B%90&amp;hnear=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%9C%EC%B4%88%EA%B5%AC+%EC%84%9C%EC%B4%88%EB%8F%99&amp;t=m&amp;cid=14927986312868838445&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">크게 보기</a></small>
+
+    <img src="img/index/index_4_2_modified.png">
+
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%% index 본문 끝 %%%%%%%%%%%%%%%%%% -->
+
+
+
+<!--    이벤트 팝업 페이지      -->
+  
+  
+  <%  if(@event) %>
+    
+    <div data-role="popup" id="popup_event" data-history="false" data-overlay-theme="a" data-theme="d" data-corners="false">
+
+      <a href="/" data-role="button" data-theme="a" data-rel="back" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+ 
+      <div class="popup_image">
+        <img src="<%=@event.thumb_image.url %>">
+      </div>
+ 
+      <div class="popup_button">
+        <a href="/event" data-role="button" data-ajax="false" data-inline="true" data-transition="flow" data-theme="a">참여하기</a>
+        <a href="/" data-role="button" data-rel="back" data-inline="true" data-theme="c">닫기</a>
+      </div>
+
+    </div>
+
+  <% end %>

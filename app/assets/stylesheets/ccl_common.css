@@ -1,0 +1,474 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+html, body{
+	background:#ffffff;
+	height:100%;
+}
+
+.content_text{
+  background-color:white;
+  margin-top:50px;
+  padding-top:0;
+}
+
+
+.main_header{
+	background:url('/img/common/header_pattern.png') repeat-x;
+	height:50px;
+	width:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	overflow: visible;
+        z-index:1000;
+	box-shadow: 0px 0px 15px black;
+}
+
+.main_header .logo{
+	margin:0px 0px 0px 10px;
+	vertical-align:middle;
+	height: 50px;
+	display:inline-block;
+}
+
+.main_header .logo img{
+	height:50px;
+}
+
+.main_header .nu{
+	float:right;
+	margin-right:15px;
+	height:50px;
+	display:inline-block;
+}
+
+.main_header .nu img{
+        height:50px; 
+}
+
+.main_header .nu span{
+	display:block;
+	margin-top:13px;
+}
+
+.main_header .nu a:link {text-decoration:none; color:#fff;}
+.main_header .nu a:visited {text-decoration:none; color:#fff;}
+.main_header .nu a:hover {text-decoration:none; color:#fff;}
+.main_header .nu a:active {text-decoration:none; color:#fff;}
+
+.main_footer{
+        background:url("/img/common/footer_pattern.png") repeat;
+        width:100%;
+        text-align:center;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        font-size: 0.8em;
+        font:#ffffff;
+        overflow:hidden;
+        clear:both;
+}
+
+
+.main_footer .element{
+	margin-left:9%;
+	/*margin-top:15px;*/
+	display: inline-block;
+	width:20%;
+}
+
+
+.main_footer .icon img{
+        width:100%;
+}
+
+.main_footer .last_element{
+        margin-left:9%;
+	margin-right:9%;
+	display: inline-block;
+	width:20%;
+}
+
+.main_footer .oneline{
+        margin-top:10%;
+	width:100%;
+	vertical-align:top;
+}
+
+.main_footer .last_oneline{
+	margin-top:10%;
+	margin-bottom:10%;
+	width:100%;
+	vertical-align:top;
+}
+
+.corp_info{
+	background-color:#000000;
+	width:100%;
+	font-size:1em;
+	color:#ffffff;
+	height:5em;
+
+}
+
+.corp_info a:active{ text-decoration:none; color:#ffffff;}
+.corp_info a:hover{ text-decoration:none; color:#ffffff;}
+.corp_info a:visited{ text-decoration:none; color:#ffffff;}
+.corp_info a:link{ text-decoration:none; color:#ffffff;}
+
+.corp_info .left{
+	float:left;
+}
+
+.corp_info .right{
+	float:right;
+        margin: 1.2em 0.7em 0 0;
+}
+
+.width_full{
+	width:100%;
+	border:0;
+	margin:0;
+}
+
+.width_full img{
+	width:100%;
+}
+
+
+
+/*--------------------전화걸기--------------------------*/
+.consulting_call {
+background:url("/img/index/call_pattern.png") repeat;
+display: block;
+height: 2em;
+padding: 0.85em 0 1em 0;
+}
+
+.consulting_call .title {
+    color: #91743C;
+    font-size: 1em;
+    text-align:center;
+    text-shadow: none;
+}
+
+.consulting_call .phoneNumber {
+    color: black;
+    font-size: 0.85em;
+    text-align: center;
+    text-shadow: none;
+}
+/*--------------------전화걸기 끝--------------------------*/
+/*--------------------메인페이지--------------------------*/
+
+.main_page{
+        margin-top:28px;
+	min-height:100%;
+	width:100%;
+}
+
+.main_page img{
+	width:100%;
+}
+
+
+.popup_image img{
+  max-height:512px;
+  width:100%;
+}
+
+.popup_button{
+  width:100%;
+  text-align:center;
+}
+
+
+
+
+
+/*--------------------상담신청 용--------------------------*/
+#consult{
+ /* width:90%;
+  margin:auto;
+  margin-top:90px;
+  margin-bottom:70px; */
+}
+
+#consult .bot{
+  margin:auto;
+}
+
+.consulting {
+background-color: white;
+padding : 1em;
+}
+
+.consulting h2 {
+    text-align: center;
+    color:#91742C;
+}
+
+.consulting p {
+    text-align: center;
+}
+
+
+
+/*--------------------before & After 용---------------------*/
+
+.bf_element{
+	margin:auto;
+	width:300px;
+	border:1px;
+}
+
+.bf_element .before{
+	margin:0px 5px 0px 0px;
+	width:140px;
+	float:left;
+	display:inline-block;
+	border:1px;
+}
+
+.bf_element .compare{
+	width:20px;
+	background:url() no-repeat;
+	clear:both;
+	margin:auto;
+	display:inline-block;
+	border:1px;
+}
+
+.bf_element .after{
+	margin:0px 0px 0px 5px;
+	width:140px;
+	float:right;
+	display:inline-block;
+	border:1px;
+}
+
+.bf_element .descript{
+	width:100%;
+	text-align:center;
+	clear:both;
+	border:1px;
+}
+
+
+
+/*--------------------Event 용---------------------*/
+
+.event{
+	width:90%;
+	margin:auto;
+	margin-top:50px;
+	text-align:center;
+	clear:both;
+	border:1px;
+}
+
+.event img{
+	width:100%;
+	display:block;
+}
+
+.event .comment{
+	width:100%;
+	text-align:center;
+}
+
+
+
+/*--------------------------------------------------*/
+
+.way{
+	width:100%;
+	margin-top:50px;
+	
+}
+
+
+
+/*--------------- about ------------------------*/
+
+.about{
+	width:90%;
+	margin:50px auto;
+}
+
+.about .name_area{
+  font-size:1.6em;
+  font-weight:bold;
+}
+
+.about .name_area .case{
+  color:#AC9253;
+}
+
+.about .name_area .name{
+  color:black;
+}
+
+.about .photo img{
+  width:100%;
+}
+
+.about hr {
+
+	border:#eee 1px dotted;
+
+	margin-top:25px;
+
+	margin-bottom:25px;
+
+}
+
+
+
+.about .content_text {
+
+	padding-left:8%;
+
+	padding-right:8%;
+
+	padding-top:2%;
+
+	padding-bottom:2%;
+
+	font-size:1.0em;
+
+	text-align: justify;
+
+	color:#666666;
+
+	line-height: 150%;
+
+}
+
+
+
+.about .content_text h1{
+
+	font-size:140%;
+
+	color:#669900;
+
+	font-weight: bold;
+
+	margin-top:50px;
+
+	margin-bottom:20px;
+
+}
+
+
+
+.about .content_text h2{
+
+	font-size:120%;
+
+	color:#666666;
+
+	font-weight: normal;
+
+	padding-top: 15px;
+
+	padding-bottom: 15px;
+
+}
+
+
+
+.about .content_text p {
+
+	padding-top: 15px;
+
+	padding-bottom: 15px;
+
+}
+
+
+
+.about .content_text ol {
+
+	padding:0;
+
+	font-size:inherit;
+
+	margin-bottom:30px;
+
+}
+
+
+
+.about .content_text li {
+
+	text-align:right;
+
+	font-weight:bold;
+
+	list-style-type:none;
+
+	margin-top:30px;
+
+	margin-bottom:15px;
+
+	font-size:130%;
+
+	font-weight:bold;
+
+	color:#333333;
+
+}
+
+
+
+.about .content_text li img {
+
+	width:100%;
+
+	filter:alpha(opacity=70);
+
+	opacity: 0.7;
+
+	-moz-opacity:0.3;
+
+}
+
+
+
+/*----------- movie ----------------*/
+.clip_element{
+   width:95%; 
+   margin:0px auto ;
+   border-bottom:2px dotted #cccccc;
+   font-weight:bold;
+   font-size: 1.3em;
+   clear:both;  
+}
+
+.clip_element .movie_area{
+  width:90%; 
+  margin:5px auto;
+  border:0px;
+
+}
+
+.clip_element .name_area{
+  width:90%;
+  margin-left:5%;
+}
+
+.clip_element .kakao_area{
+  width:90%;
+  margin-bottom:40px;
+  margin-left:5%;
+}
+
+.clip_element .kakao_area img{
+   min-width:100px;
+   max-width:300px;
+   width:40%;
+}
