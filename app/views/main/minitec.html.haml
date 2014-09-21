@@ -1,0 +1,20 @@
+- content_for :js do 
+  :javascript
+    $(window).load(function() {
+      var winw = $(window).width();
+      var dong = document.getElementsByTagName("iframe");
+      for(var i=0; i<dong.length;i++){
+        dong[i].width = winw * 0.84;
+        dong[i].height = dong[i].width * 9 / 16;
+      }
+    });
+
+.content_text{style: "padding-top:0;"}
+  = image_tag "/img/minitec/minitec_header_image.png", class: 'width_full'
+  = image_tag "/img/minitec/minitec_content1.png", class: 'margin_4per margin_top_5per'
+  = image_tag "/img/minitec/minitec_content2.png", class: 'margin_1per margin_top_5per'
+  %iframe{:src => "//www.youtube.com/embed/mIrNUWa7PJ8?rel=0", :frameborder => "0", :allowfullscreen => "true", :class => 'margin_3per'}
+  = image_tag "/img/minitec/minitec_content3.png", class: 'margin_1per margin_top_5per'
+  = image_tag "/img/minitec/minitec_content4.png", class: 'margin_1per margin_top_5per'
+  = image_tag "/img/minitec/minitec_content5.png", class: 'margin_1per margin_top_5per'
+  = image_tag "/img/common/bottom_banner_clips.png", class: 'margin_3per'

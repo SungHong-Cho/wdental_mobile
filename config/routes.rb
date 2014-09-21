@@ -10,6 +10,9 @@ CclMuse::Application.routes.draw do
   match "progress" => 'main#progress', as: "progress_main"
   match "feature" => 'main#feature', as: "feature_main"
   match "kakao" => 'main#kakao', as: "kakao_main"
+  match "wm" => 'main#wm', as: "wm"
+  match "minitec" => 'main#minitec', as: "minitec"
+  match "medical" => 'main#medical', as: "medical"
   match "admin" => 'abouts#index'
 
   root to: "main#index"

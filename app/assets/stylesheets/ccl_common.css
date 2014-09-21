@@ -11,10 +11,42 @@ html, body{
 
 .content_text{
   background-color:white;
-  margin-top:50px;
   padding-top:0;
 }
 
+/*------------------  공용  ------------------------*/
+
+.margin_4per{
+  margin:0 auto;
+  width:92%;
+  padding:4% 0;
+  background:white;
+  display:block;
+}
+
+.margin_3per{
+  margin:0 auto;
+  width:94%;
+  padding:2% 0;
+  background:white;
+  display:block;
+}
+
+.margin_1per{
+  margin:0 auto;
+  width:98%;
+  padding:2% 0;
+  background:white;
+  display:block;
+}
+
+.margin_top_5per{
+  margin-top:5%;
+  background:white;
+  display:block;
+}
+
+/*--------------------------------------------------*/
 
 .main_header{
 	/*background:url('/img/common/header_pattern.png') repeat-x;*/
@@ -479,4 +511,26 @@ padding : 1em;
    min-width:100px;
    max-width:300px;
    width:40%;
+}
+
+.medical_banner{
+  margin:5% auto 0;
+  background: rgb(248,248,248);
+  border:1px solid rgb(225,225,225);
+  width:94%;
+  padding: 7% 0 7%;
+  text-align:center;
+}
+
+.medical_banner img{
+  width:71%;
+}
+
+.medical_banner_button{
+  margin: 7% auto 0;
+  width:20%;
+}
+
+.medical_banner_button img{
+  width: 100%;
 }
