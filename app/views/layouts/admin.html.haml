@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title Boa Incognito 
+    %title W치과 관리자 페이지
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
     = csrf_meta_tag
@@ -16,13 +16,13 @@
   %body
     .admin_header
       .title_bar
-        %span.site_url m.boaortho.com 
+        %span.site_url m.wdental.kr 
         .right_helpdoc
           %span Help
           .font_doc
             %span DOC
       .admin_logo
-        %span 보아치과 CCD Incognito 모바일 사이트
+        %span W치과 모바일 사이트
         .lower_font
           %span 관리자 모드
     .admin_body
@@ -38,13 +38,13 @@
     .admin_footer
       .skyseed_logo
         %p 제작: SKYSEED
-        %p Tel: 02-499-3111
+        %p Tel: 070-7004-8855
         //%span.sky SKY
         /%span.seed SEED
         /%span.tel_lower (Tel. 02-499-3111)
 
   /- if (controller.controller_name == "abouts" || controller.controller_name == "events") && (controller.action_name == "new" || controller.action_name == "edit")
-    /= javascript_include_tag "admin_foot_javascripts"
+  /= javascript_include_tag "admin_foot_javascripts"
 
   
     
