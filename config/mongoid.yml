@@ -5,7 +5,7 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: ccl_muse_development
+      database: wdental_mobile_development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
@@ -69,7 +69,7 @@ development:
 test:
   sessions:
     default:
-      database: ccl_muse_test
+      database: wdental_mobile_test
       hosts:
         - localhost:27017
       options:
@@ -82,10 +82,10 @@ test:
 production:
   sessions:
     default:
-      database: ccl_muse_production
+      database: wdental_mobile_production
       hosts:
         - localhost:27017
-      username: clinic
-      password: bbooa0617
+      username: wdental_mobile
+      password: w7532879
       options:
         consistency: :strong
