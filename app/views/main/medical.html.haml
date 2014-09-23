@@ -26,9 +26,12 @@
   .medical_banner
     = image_tag "/img/main/minitec_image_contents.png", class: ''
     .medical_banner_button
-      = image_tag "/img/common/see_more_button.png", class: ''
+      %a{href: "/minitec", target: "_self"}
+        = image_tag "/img/common/see_more_button.png", class: ''
   .medical_banner
     = image_tag "/img/main/wm_image_contents.png", class: ''
     .medical_banner_button
-      = image_tag "/img/common/see_more_button.png", class: ''
-  = image_tag "/img/common/bottom_banner_clips.png", class: 'margin_3per'
+      %a{href: "/wm", target: "_self"}
+        = image_tag "/img/common/see_more_button.png", class: ''
+  %a{href: "/clip", target: "_self"}
+    = image_tag "/img/common/bottom_banner_clips.png", class: 'margin_3per'
