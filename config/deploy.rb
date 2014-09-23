@@ -1,8 +1,8 @@
 require "bundler/capistrano"
 
-server "211.110.130.120", :web, :app, :db, primary: true
+server "wminitec.cafe24.com", :web, :app, :db, primary: true
 
-set :application, "boa_incognito"
+set :application, "wdental_mobile"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
@@ -22,7 +22,6 @@ after "deploy:update_code", "db:symlink"
 namespace :db do
   desc "Create database yaml in shared path"
   task :default do
-
   end
 
   desc "Make symlink for mongo yaml"
