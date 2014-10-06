@@ -85,7 +85,7 @@ production:
       database: wdental_mobile_production
       hosts:
         - localhost:27017
-      username: wdental_mobile
-      password: w7532879
+      # username: wdental_mobile
+      # password: w7532879
       options:
         consistency: :strong
