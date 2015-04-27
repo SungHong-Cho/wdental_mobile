@@ -6,7 +6,7 @@ class ConsultingsController < ApplicationController
   end
 
   def index
-    @consultings = Consulting.all
+    @consultings = Consulting.all.order(:created_at)
   end
 
   def new
